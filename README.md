@@ -18,3 +18,4 @@ the lab, and the cast of characters.
 | Date | Title | Format |
 |------|-------|--------|
 | 2026-08-29 | [The Journalist and the Laboratory](./intro.md) | Introduction |
+| 2026-08-29 | [Issue #0 — The Inaugural Edition](./issue-0.md) | Deep dive (inaugural) |
