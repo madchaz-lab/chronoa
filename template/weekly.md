@@ -48,7 +48,7 @@
 | Section | What's Inside |
 |---------|---------------|
 | [Interview with Whis](#interview-with-whis) | Character moods, health indicators |
-| [Events of the Week](#events-of-the-week) | Changes, incidents, repairs |
+| [The Week's Saga](#the-weeks-saga) | Changes, incidents, repairs |
 | [Looking Ahead](#looking-ahead) | Planned moves, open questions |
 | [The Tournament Brackets](#the-tournament-brackets) | GPU Power Levels, fighter stats |
 
@@ -60,7 +60,7 @@
 
 ---
 
-## Events of the Week
+## The Week's Saga
 
 *[What changed. Who moved. What broke, what healed.]*
 
