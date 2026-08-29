@@ -1,0 +1,19 @@
+# ---- NEVER publish secrets ------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*.asc
+*.gpg
+kubeconfig
+.kube/
+HA_KEY.txt
+*_apikey.txt
+*token*
+
+# ---- generated / scratch --------------------------------------------------
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+*.swp
