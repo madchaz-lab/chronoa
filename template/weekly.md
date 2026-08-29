@@ -48,21 +48,15 @@
 | Section | What's Inside |
 |---------|---------------|
 | [Interview with Whis](#interview-with-whis) | Character moods, health indicators |
-| [The Tournament Brackets](#the-tournament-brackets) | GPU Power Levels, fighter stats |
 | [Events of the Week](#events-of-the-week) | Changes, incidents, repairs |
 | [Looking Ahead](#looking-ahead) | Planned moves, open questions |
+| [The Tournament Brackets](#the-tournament-brackets) | GPU Power Levels, fighter stats |
 
 ---
 
 ## Interview with Whis
 
 *[Character moods this week. Health snapshot. What's alive, what's not.]*
-
----
-
-## The Tournament Brackets
-
-*[GPU Power Levels. Fighter stats. Rankings.]*
 
 ---
 
@@ -75,6 +69,12 @@
 ## Looking Ahead
 
 *[Rumors, planned changes, things on the horizon.]*
+
+---
+
+## The Tournament Brackets
+
+*[GPU Power Levels. Fighter stats. Rankings.]*
 
 ---
 
