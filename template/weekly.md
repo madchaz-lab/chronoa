@@ -47,14 +47,14 @@
 
 | Section | What's Inside |
 |---------|---------------|
-| [State of the Lab](#state-of-the-lab) | Character moods, health indicators |
+| [Interview with Whis](#interview-with-whis) | Character moods, health indicators |
 | [The Tournament Brackets](#the-tournament-brackets) | GPU Power Levels, fighter stats |
 | [Events of the Week](#events-of-the-week) | Changes, incidents, repairs |
 | [Looking Ahead](#looking-ahead) | Planned moves, open questions |
 
 ---
 
-## State of the Lab
+## Interview with Whis
 
 *[Character moods this week. Health snapshot. What's alive, what's not.]*
 
