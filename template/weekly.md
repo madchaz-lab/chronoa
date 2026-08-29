@@ -49,7 +49,7 @@
 |---------|---------------|
 | [Interview with Whis](#interview-with-whis) | Character moods, health indicators |
 | [The Week's Saga](#the-weeks-saga) | Changes, incidents, repairs |
-| [Looking Ahead](#looking-ahead) | Planned moves, open questions |
+| [Bulma's Workshop](#bulmas-workshop) | What the operator's been building |
 | [The Tournament Brackets](#the-tournament-brackets) | GPU Power Levels, fighter stats |
 
 ---
@@ -66,9 +66,9 @@
 
 ---
 
-## Looking Ahead
+## Bulma's Workshop
 
-*[Rumors, planned changes, things on the horizon.]*
+*[What Bulma's been building. Changes in k3s/. In-universe implications.]*
 
 ---
 
