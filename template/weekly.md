@@ -33,6 +33,27 @@
 
 ---
 
+## Editorial
+
+*[The Owner speaks — 1-2 paragraphs]*
+
+*[In-universe interpretation — 2-3 paragraphs]*
+
+*[Paper summary — 1-2 paragraphs]*
+
+---
+
+## Contents
+
+| Section | What's Inside |
+|---------|---------------|
+| [State of the Lab](#state-of-the-lab) | Character moods, health indicators |
+| [The Tournament Brackets](#the-tournament-brackets) | GPU Power Levels, fighter stats |
+| [Events of the Week](#events-of-the-week) | Changes, incidents, repairs |
+| [Looking Ahead](#looking-ahead) | Planned moves, open questions |
+
+---
+
 ## State of the Lab
 
 *[Character moods this week. Health snapshot. What's alive, what's not.]*
