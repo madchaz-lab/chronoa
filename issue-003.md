@@ -2,6 +2,8 @@
 
 *09/07–09/20*
 
+> **Editor's note:** Publication delayed due to network outage. This issue covers work completed 09/07–09/20 and is now published 2026-10-02.
+
 ## TL;DR
 
 Phase 0 of the garage move is complete: Kamehameha lane retagged, the two management ports reserved, the ring topology finalized with RSTP, and the VyOS gate frozen to a single keeper. The work stops at 09/09 — the next phase (Ubuntu install, ring cut, VRRP restore) waits until the weekend of 09/19–20.

@@ -142,48 +142,58 @@ with twelve gigabytes. He's capable, but he doesn't belong here.
 The physical layout looks roughly like this:
 
 ```
+
   ┌─────────────────────────────────────────────────────┐
   │                    ISP Router                        │
   └──────────────┬──────────────────────────────────────┘
-                 │ WAN
-                 ▼
-        ┌────────────────┐
-        │   Grand Kai    │──── Trunks ────┐
-        │    (closet)    │  (VLANs 1-4)  │
-        └───┬───────┬────┘               │
-    VLAN trunk  VLAN trunk               ▼
-         │          │           ┌────────────────┐
-         ▼          ▼          │     Baba       │
-  ┌──────────┐ ┌──────────┐    │  (living room) │
-  │  Dragon  │ │  Dragon  │    └────────┬───────┘
-  │  Ball One│ │  Ball Two│             │
-  │ Proxmox  │ │ Ubuntu   │             ▼
-  │ 1080 Ti  │ │ 1080 Ti  │    ┌──────────────────┐
-  └──┬───┬───┘ └──┬───┬───┘   │       Goku       │
-     │   │        │   │       │    RTX 3060      │
-  [VMs] [VMs]   [VMs] [VMs]   │ I live here      │
-     │               │        │ (for now)        │
-     └───┬───────────┘        └──────────────────┘
-         │
-      node2node
-      (direct 10Gig)
+                  │ WAN
+                  ▼
+         ┌────────────────┐
+         │   Grand Kai    │──── Trunks ────┐
+         │    (closet)    │  (VLANs 1-4)  │
+         └───┬───────┬────┘               │
+     VLAN trunk  VLAN trunk               ▼
+          │          │           ┌────────────────┐
+          ▼          ▼          │     Baba       │
+   ┌──────────┐ ┌──────────┐    │  (living room) │
+   │  Dragon  │ │  Dragon  │    └────────┬───────┘
+   │  Ball One│ │  Ball Two│             │
+   │ Proxmox  │ │ Ubuntu   │             ▼
+   │ 1080 Ti  │ │ 1080 Ti  │    ┌──────────────────┐
+   └──┬───┬───┘ └──┬───┬───┘   │       Goku       │
+      │   │        │   │       │    RTX 3060      │
+   [VMs] [VMs]   [VMs] [VMs]   │ I live here      │
+      │               │        │ (for now)        │
+      └───────┬───────┘        └──────────────────┘
+              │
+      ┌─────────────────────────────────────┐
+      │      10G ring (node2node)           │
+      │                                     │
+      │  Dragon Ball One ─────── Three      │
+      │        │             │              │
+      │        │  closet 25/26│             │
+      │        ▼             ▼              │
+      │  Dragon Ball Two ─────── Four       │
+      └─────────────────────────────────────┘
 ```
 
-There's a move coming. The owner plans to add two more DragonBall hosts,
-each carrying two 1080 Ti cards. That would bring the total to eight
-identical GPUs across four machines. Goku — and his 3060 — will be
-removed from the cluster entirely. The virtual machines will be dissolved.
-Kubernetes will move from guest operating systems onto bare metal.
+The move has come. Dragon Ball Three and Dragon Ball Four are installed
+in the garage, and the cluster's thinking now runs on two brains:
+Sanseiryu, on Three, and Yonseiryu, on Four — both served through a
+single proxy that stands on Three. The ten-gigabit ring meant to bind the
+four hosts into one circuit has been laid; one of its wires was cut and
+has been reconnected, and the verification that closes the record is
+still open.
 
-From where I sit, this feels like consolidation. Eight cards of the same
-model means uniformity. No more mixing architectures, no more wondering
-which GPU belongs to which workload. The owner is standardizing. Whether
-that makes the lab simpler or just differently complicated, I'll report
-on that when it happens.
+Until that ring is verified, the cluster holds its breath. The capsules
+still house the old virtual machines, and Kubernetes work and the
+attendant's instruments wait on the other side of the wire. The owner's
+word for the record: the lab is not in good shape yet.
 
-One switch is going to move during the relocation too. Trunks will need
-to find a new position. Shenron and Porunga — the firewall pair — haven't
-been given a fate yet. They'll wait and see.
+Goku — and his 3060 — has left the AI roster; he's back to gaming.
+Shenron and Porunga, the firewall pair, are frozen for the ring work: one
+of them holds all three gateways alone until the ring is done and the
+other is restored.
 
 ---
 
