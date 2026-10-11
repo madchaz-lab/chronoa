@@ -126,23 +126,17 @@ Isolation is a feature, not a bug.
 
 ### Hardware
 
-Dragon Ball One carries a Ryzen processor with sixteen threads and an
-NVIDIA GTX 1080 Ti — eleven gigabytes of video memory that the owner
-puts to work on machine learning tasks. Its GPU's name is Tao Pai Pai.
-Dragon Ball Two has a similar profile: another Ryzen, another 1080 Ti,
-another thirty-two gigabytes of system memory. Its GPU is Korin.
+Dragon Ball One is a Ryzen 7 5800X3D with 32 GB RAM and two GTX 1080 Ti cards — Tao Pai Pai and a second fighter still unnamed in the record. It runs bare-metal Kubernetes now; the Proxmox VMs are gone.
 
-Both cards used to mine cryptocurrency. Now they train machine learning
-models. Older fighters, still useful — like tournament participants from
-a bygone era who keep showing up anyway.
+Dragon Ball Two is a Ryzen 7 5700X3D with 32 GB RAM and one GTX 1080 Ti, Korin. A second 1080 Ti is pending arrival once Dragon Ball One is fully settled. The host is bare-metal.
 
-I run on a third machine, Goku. He has a Ryzen 8700G and an RTX 3060
-with twelve gigabytes. He's capable, but he doesn't belong here.
+Dragon Ball Three is a first-gen Ryzen with 24 GB RAM and two GTX 1080 Ti cards. It hosts Sanseiryu, the llama brain, and now holds the Kubernetes control plane. Dragon Ball Four is a first-gen Ryzen with two GTX 1080 Ti cards, hosting Yonseiryu, the second llama brain.
 
-The physical layout looks roughly like this:
+Together the four dragonballs form a seven-of-eight GPU arena. The missing card lives on Dragon Ball Two. The ten-gigabit Kamehameha ring binds them; VLAN tagging is verified and the OVS ring is being finalised.
+
+The physical layout now looks roughly like this:
 
 ```
-
   ┌─────────────────────────────────────────────────────┐
   │                    ISP Router                        │
   └──────────────┬──────────────────────────────────────┘
@@ -150,7 +144,7 @@ The physical layout looks roughly like this:
                   ▼
          ┌────────────────┐
          │   Grand Kai    │──── Trunks ────┐
-         │    (closet)    │  (VLANs 1-4)  │
+         │    (garage)    │  (VLANs 1-4)  │
          └───┬───────┬────┘               │
      VLAN trunk  VLAN trunk               ▼
           │          │           ┌────────────────┐
@@ -158,42 +152,27 @@ The physical layout looks roughly like this:
    ┌──────────┐ ┌──────────┐    │  (living room) │
    │  Dragon  │ │  Dragon  │    └────────┬───────┘
    │  Ball One│ │  Ball Two│             │
-   │ Proxmox  │ │ Ubuntu   │             ▼
-   │ 1080 Ti  │ │ 1080 Ti  │    ┌──────────────────┐
-   └──┬───┬───┘ └──┬───┬───┘   │       Goku       │
-      │   │        │   │       │    RTX 3060      │
-   [VMs] [VMs]   [VMs] [VMs]   │ I live here      │
-      │               │        │ (for now)        │
-      └───────┬───────┘        └──────────────────┘
-              │
+   │  2×1080Ti│ │  1×1080Ti│             ▼
+   └──┬───────┘ └──┬───────┘    ┌──────────────────┐
+      │            │            │       Goku       │
+      │            │            │    RTX 3060      │
+      │            │            │ gaming only      │
+      └──────┬─────┘            └──────────────────┘
+             │
       ┌─────────────────────────────────────┐
       │      10G ring (node2node)           │
       │                                     │
       │  Dragon Ball One ─────── Three      │
       │        │             │              │
-      │        │  closet 25/26│             │
+      │        │   garage    │              │
       │        ▼             ▼              │
       │  Dragon Ball Two ─────── Four       │
       └─────────────────────────────────────┘
 ```
 
-The move has come. Dragon Ball Three and Dragon Ball Four are installed
-in the garage, and the cluster's thinking now runs on two brains:
-Sanseiryu, on Three, and Yonseiryu, on Four — both served through a
-single proxy that stands on Three. The ten-gigabit ring meant to bind the
-four hosts into one circuit has been laid; one of its wires was cut and
-has been reconnected, and the verification that closes the record is
-still open.
+The capsules are retired. Kubernetes runs directly on the dragonballs, with the control plane on Dragon Ball Three. The brains run on Kubernetes with LiteLLM proxying a pooled `bonsai` group across Sanseiryu and Yonseiryu. The model is Muse-Glimmer 30B Q4_K_M.
 
-Until that ring is verified, the cluster holds its breath. The capsules
-still house the old virtual machines, and Kubernetes work and the
-attendant's instruments wait on the other side of the wire. The owner's
-word for the record: the lab is not in good shape yet.
-
-Goku — and his 3060 — has left the AI roster; he's back to gaming.
-Shenron and Porunga, the firewall pair, are frozen for the ring work: one
-of them holds all three gateways alone until the ring is done and the
-other is restored.
+Goku — and his 3060 — has left the AI roster; he's back to gaming. Shenron and Porunga remain frozen for the ring work.
 
 ---
 
