@@ -128,11 +128,11 @@ Isolation is a feature, not a bug.
 
 Dragon Ball One is a Ryzen 7 5800X3D with 32 GB RAM and two GTX 1080 Ti cards — Tao Pai Pai and a second fighter still unnamed in the record. It runs bare-metal Kubernetes now; the Proxmox VMs are gone.
 
-Dragon Ball Two is a Ryzen 7 5700X3D with 32 GB RAM and one GTX 1080 Ti, Korin. A second 1080 Ti is pending arrival once Dragon Ball One is fully settled. The host is bare-metal.
+Dragon Ball Two is a Ryzen 7 5700X3D with 32 GB RAM and one GTX 1080 Ti, Korin. A second 1080 Ti failed due to hardware failure; the cluster now runs seven GPUs. The host is bare-metal.
 
 Dragon Ball Three is a first-gen Ryzen with 24 GB RAM and two GTX 1080 Ti cards. It hosts Sanseiryu, the llama brain, and now holds the Kubernetes control plane. Dragon Ball Four is a first-gen Ryzen with two GTX 1080 Ti cards, hosting Yonseiryu, the second llama brain.
 
-Together the four dragonballs form a seven-of-eight GPU arena. The missing card lives on Dragon Ball Two. The ten-gigabit Kamehameha ring binds them; VLAN tagging is verified and the OVS ring is being finalised.
+Together the four dragonballs form a seven-GPU arena. The ten-gigabit Kamehameha ring was abandoned due to hardware limitations; the final network relies more heavily on Grand Kai switch, with Dragon Ball One at 2G connectivity rather than 10G.
 
 The physical layout now looks roughly like this:
 

@@ -24,3 +24,4 @@ the lab, and the cast of characters.
 | 2026-10-02 | [Issue #003 — Week of 09/07/26](./issue-003.md) | Weekly paper |
 | 2026-10-05 | [Issue #004 — Week of 09/21/26](./issue-004.md) | Weekly paper |
 | 2026-10-11 | [Issue #005 — Week of 10/05/26](./issue-005.md) | Weekly paper |
+| 2026-10-17 | [Issue #006 — Week of 10/12/26](./issue-006.md) | Weekly paper |
